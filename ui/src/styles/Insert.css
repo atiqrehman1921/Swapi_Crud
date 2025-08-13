@@ -1,0 +1,55 @@
+.insert-form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 20px 25px;         
+  width: 100%;
+  max-width: 700px;
+  color: white;
+  animation: fadeInScale 0.6s ease forwards;
+
+}
+
+.insert-form h6 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;         
+  color: #f3f4f6;
+}
+
+.insert-form input {
+  width: 100%;
+  padding: 8px 10px;         
+  margin-top: 4px;          
+  margin-bottom: 12px;       
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;         
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.insert-form button {
+  width: 100%;
+  background-color: white;
+  border: none;
+  padding: 10px;             
+  border-radius: 8px;
+  color: black;
+  font-size: 1rem;          
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.insert-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 95px;
+}

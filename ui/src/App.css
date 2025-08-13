@@ -1,0 +1,67 @@
+:root{
+      height: 100vh;
+  background: black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cursor {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+.bubbles {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.bubbles span {
+  position: absolute;
+  bottom: -150px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: bubbleUp 10s infinite;
+}
+
+.bubbles span:nth-child(odd) {
+  width: 15px;
+  height: 15px;
+}
+.bubbles span:nth-child(even) {
+  width: 8px;
+  height: 8px;
+}
+
+@keyframes bubbleUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.bubbles span:nth-child(1) { left: 5%; animation-delay: 0s; }
+.bubbles span:nth-child(2) { left: 15%; animation-delay: 1s; }
+.bubbles span:nth-child(3) { left: 25%; animation-delay: 2s; }
+.bubbles span:nth-child(4) { left: 35%; animation-delay: 3s; }
+.bubbles span:nth-child(5) { left: 45%; animation-delay: 4s; }
+.bubbles span:nth-child(6) { left: 55%; animation-delay: 5s; }
+.bubbles span:nth-child(7) { left: 65%; animation-delay: 6s; }
+.bubbles span:nth-child(8) { left: 75%; animation-delay: 7s; }
+.bubbles span:nth-child(9) { left: 85%; animation-delay: 8s; }
+.bubbles span:nth-child(10) { left: 95%; animation-delay: 9s; }

@@ -1,0 +1,6 @@
+.footer {
+  background: rgba(0, 0, 0, 0.85);
+  bottom: 0;
+  width: 100%;
+  z-index: 50;
+}

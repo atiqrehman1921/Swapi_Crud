@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React + Crud</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root">
+        <div class="bubbles">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    </div>
+    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const bubblesContainer = document.querySelector('.bubbles');
+
+    // ---- White Cursor Circle ----
+    const cursorCircle = document.createElement('div');
+    cursorCircle.classList.add('cursor-circle');
+    document.body.appendChild(cursorCircle);
+
+    document.addEventListener('mousemove', function(e) {
+        cursorCircle.style.left = `${e.clientX}px`;
+        cursorCircle.style.top = `${e.clientY}px`;
+    });
+
+    // ---- Continuous Background Bubbles ----
+    function createBubble() {
+        const bubble = document.createElement('div');
+        bubble.className = 'bubble';
+        bubble.style.left = `${Math.random() * 100}%`;
+        bubble.style.width = `${Math.random() * 60 + 20}px`;
+        bubble.style.height = bubble.style.width;
+        bubble.style.animationDuration = `${Math.random() * 10 + 5}s`;
+        bubble.style.animationDelay = `0s`;
+        bubble.style.opacity = Math.random() * 0.5 + 0.1;
+
+        bubblesContainer.appendChild(bubble);
+
+        // Remove bubble after animation
+        setTimeout(() => bubble.remove(), 15000);
+    }
+
+    // Create bubbles every 1.5 seconds
+    setInterval(createBubble, 1500);
+});
+</script>
+
+  </body>
+</html>
