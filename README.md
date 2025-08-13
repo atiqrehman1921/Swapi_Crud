@@ -13,8 +13,7 @@ This project is a full-stack application built with **.NET Core 8** and **React*
   - Fetches and seeds data from **SWAPI API** into local database  
   - Implements **CRUD operations** for all entities  
   - **Authentication & Authorization** using **Identity + JWT**  
-  - **Unit Testing** for services and business logic  
-  - Many other features for performance and scalability  
+  - **Unit Testing** for services and business logic   
 
 - **Frontend**  
   - Built with **React**  
@@ -35,4 +34,5 @@ This project is a full-stack application built with **.NET Core 8** and **React*
 
 ### Setup Backend
 
-1. Clone the repository: https://github.com/atiqrehman1921/Swapi_Crud
+1. Clone the repository: [https://github.com/atiqrehman1921/Swapi_Crud](https://github.com/atiqrehman1921/Swapi_Crud
+)
